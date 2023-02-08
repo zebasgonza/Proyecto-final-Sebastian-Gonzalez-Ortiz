@@ -1,0 +1,36 @@
+Comandos:
+
+1. git init
+    sirve para empezar a trabajar con git. Solo se escribe la primera vez para activarlo
+
+2. git status
+    muestra que archivos existen junto con su status para saber que acción realizar
+
+3. git add . 
+   agrega todos los archivos que git identifico anteriormente
+
+4. git commit -m "commit"
+    confirma los cambios realizados para generar un historial como en google drive 
+
+5. git log
+    muestra los commit realizados anteriormente
+    git log --oneline
+    muestra los commit solo en una solalinea
+
+6.  git branch
+        muestra que ramas hay en el archivo
+    git branch mi-rama
+        Genera otra versión del mismo proyecto. (no colocar ramas sin haber guardado modificaciones, debe estar working tree clean)
+    git checkout (nombre de la rama) rama-nueva
+        genere el cambio de rama
+    git branch -D rama-borar
+        se debe estar en main para borrar las demas.
+
+__________________________________________________________________
+GITHUB COMANDOS
+    
+    * Generar repositorio
+        git remote add origin "agregar link del repositorio"
+            git push -u origin main
+    *Guardar repositorio
+    git push: guarda los cambios
