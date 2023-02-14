@@ -1,0 +1,252 @@
+/*-----Guidelines Generales--------*/
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+body {
+    background-color: bisque;
+  }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway/Raleway-Medium.ttf);
+}
+
+/*------------TIPOGRAFIA---------*/
+h1{
+    font-size: 3.5em;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 2.7em;
+    font-family: "Raleway", sans-serif;
+  }
+  h3 {
+    font-size: 2em;
+    font-family: "Raleway", sans-serif;
+  }
+  p {
+      font-family: "Raleway", sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.1667rem;
+      margin: 2rem 2rem 2rem 2rem;
+    }
+  label {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1667rem;
+    margin: 3em;
+  }
+/*-----adaptación de imagen a la pantalla-----*/
+    img {
+        max-width: 100%;
+      }
+
+ul{
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 25px;
+}
+
+header a:hover{
+  color: rgb(255, 255, 255);
+}
+
+header a{
+  color: rgb(0, 0, 0);
+  padding: 5px 12px;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+input, textarea {
+  font-size: 1.1667rem;
+  border: none;
+  box-sizing: border-box;
+  padding: 7px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 100px;
+  max-width: 200px;
+} 
+     
+/*-----------------------HEADER---------------------*/    
+.header__logo {
+    font-size: 2em;
+    color: brown;
+    font-weight: bolder;
+    margin: 0;
+    padding: 25px 30px;
+}
+.header__container{
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+/*-----------------------HERO---------------------*/
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.hero__text{
+    color: rgb(255, 255, 255);
+    width:  95%;
+  }
+.hero__index__img{
+    background-image: url("../img/1.bienvenidos.jpg");
+  }
+.hero__cata__img {
+    background-image: url("../img/3.vinos\ destacados.jpg");
+  }
+/*------------------------INDEX--------------------------------*/
+/*-----------------------HISTORIA---------------------*/
+.historia__container {
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    padding: 200px 12px;
+    h2 {
+        color: rgb(105, 20, 20); 
+    }
+}
+/*-----------------------DESTACADOS---------------------*/
+#destacados {
+    h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+}
+/*------------------------VIÑEDOS--------------------------------*/
+/*-----------------------VIÑEDOS BAKATA---------------------*/
+.hero__vinedo__img{
+    background-image: linear-gradient(0deg,
+     rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5)
+    )
+    ,url("../img/7.mapa.jpg");
+  }
+.vinedo__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 200px 12px;
+    h2 {
+        color: rgb(236, 89, 89);
+    }
+    p {
+        margin-top: 4em;
+        width: 40%;
+        text-align: initial;
+        padding: 0px 30px;
+    }
+.vinedo__img {
+    background-image: url("../img/8.vinedo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 40%;
+}
+}
+
+/*-----------------------CARDS PRODUCTOS---------------------*/
+.card__container {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5em;
+    h3 {
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 1.6999rem;
+    }
+    p {
+        font-family: "Raleway", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.1667rem;
+        margin: 1rem 0;
+      }
+    button {
+        border: none;
+        padding: 12px;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+.card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    max-width: 300px;
+    padding: 1rem 1rem 2rem 1rem;
+    position: relative;
+    border-radius: 10px;
+    }
+.card__oferta{
+        background-color: rgb(240, 233, 140);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        font-family: "Raleway", sans-serif;
+        font-weight: bolder;
+        font-size: 1,10rem;
+        position: absolute;
+        top: -4px;
+        right: -100px;
+        height: 26px;
+      }
+}
+ /*--------------------PAGINA_CATALOGO--------------------------*/     
+/*-----------------------HERO---------------------*/

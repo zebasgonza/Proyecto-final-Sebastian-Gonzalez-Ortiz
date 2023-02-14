@@ -1,0 +1,16 @@
+Comandos SASS:
+    1. npm init
+        se debe oprimir 9 veces la tecla enter hasta llegar a una pregunta de yes/no.
+    2. npm install -g sass
+        Instala globalmente sass en el proyecto completo
+    3. sass --watch scss:css
+        vigila todo lo que esta en sass y pasalo a css.
+    
+    Iniciar de nuevo una vez instalado y cerrada la consola:
+        1. npm run watch-css
+            Arranca de nuevo sass en el archivo
+
+    ----!TIP!------
+    ----Usar ctr-c para pausar la consola antes de cerrar VS----
+    
+    Se debe 
