@@ -34,6 +34,12 @@ h1{
     font-size: 2em;
     font-family: "Raleway", sans-serif;
   }
+  h4 {
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
   p {
       font-family: "Raleway", sans-serif;
       font-weight: normal;
@@ -163,6 +169,16 @@ textarea {
         margin-bottom: 1em;
     }
 }
+/*------------------------CATÁLOGO--------------------------------*/
+/*-----------------------PRODUCTOS TITULOS---------------------*/
+.card__h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
 /*------------------------VIÑEDOS--------------------------------*/
 /*-----------------------VIÑEDOS BAKATA---------------------*/
 .hero__vinedo__img{
@@ -171,82 +187,235 @@ textarea {
      rgba(0,0,0,0.5)
     )
     ,url("../img/7.mapa.jpg");
-  }
+}
 .vinedo__container {
+  max-width: 1700px;
+  margin: auto;
+  text-align: center;
+  padding: 200px 12px;
+  h2 {
+    color: rgb(236, 89, 89); 
+  }
+}
+.cosecha__img {
+  background-image: linear-gradient(0deg,
+  rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)
+ )
+ ,url("../img/9.trabajo.jpg");
+}
+.cosecha__text {
+  h2 {
+    margin-bottom: -1.5rem;
+    color: aliceblue;
+  }
+  p {
+    color: aliceblue;
+  }
+}
+/*------------------------HISTORIA--------------------------------*/
+/*-----------------------ORIGENES---------------------*/
+.origen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1700px;
+  margin: auto;
+  h2 {
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+  }
+}
+.origen__img {
+  background-image: url("../img/10.hacienda1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+}
+.origen__img2 {
+  background-image: url("../img/11.familia.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 5em;
+  height: 500px;
+  width: 100%;
+}
+.origen__img3 {
+  background-image: url("../img/12.hacienda2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 5em;
+  height: 500px;
+  width: 100%;
+}
+/*------------------------CONTACTO--------------------------------*/
+/*-----------------------CONTACTO---------------------*/
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1700px;
+  margin: auto;
+}
+/*-----------------------CARDS PRODUCTOS---------------------*/
+.card__container {
+  max-width: 1700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5em;
+  h3 {
+      text-align: center;
+      margin: 1rem 0;
+      font-size: 1.6999rem;
+  }
+  p {
+      font-family: "Raleway", sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.1667rem;
+      margin: 1rem 0;
+    }
+  button {
+      border: none;
+      padding: 12px;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 1rem;
+      border-radius: 10px;
+  }
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  max-width: 300px;
+  padding: 1rem 1rem 2rem 1rem;
+  position: relative;
+  border-radius: 10px;
+  }
+.card__oferta{
+      background-color: rgb(240, 233, 140);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      font-family: "Raleway", sans-serif;
+      font-weight: bolder;
+      font-size: 1,10rem;
+      position: absolute;
+      top: -4px;
+      right: -100px;
+      height: 26px;
+    }
+}
+/*------------------------MEDIA QUERIES------------------------------------*/
+/*------------------------DESKTOP--------------------------------*/
+@media (min-width:720px) {
+  header nav {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero__text{
+    width:  45%;
+  }
+/*------------------------INDEX--------------------------------*/
+/*-----------------------ORIGENES---------------------*/
+.historia__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1700px;
+  margin: auto;
+  p {
+    margin-top: 1em;
+    text-align: left;
+  }
+}
+.historia__img {
+  background-image: url("../img/2.fachada_vinedos.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 290%;
+}
+
+
+/*------------------------HISTORIA--------------------------------*/
+/*-----------------------ORIGENES---------------------*/
+  .origen {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 200px 12px;
+    max-width: 1700px;
+    margin: auto;
     h2 {
-        color: rgb(236, 89, 89);
+      margin-left: 1em;
+      margin-top: 1em;
+      margin-bottom: -0.5em;
+      text-align: left;
     }
     p {
-        margin-top: 4em;
-        width: 40%;
-        text-align: initial;
-        padding: 0px 30px;
+      margin-left: 2em;
+      text-align: left;
+      width: auto;
     }
-.vinedo__img {
+  }
+/*------------------------VIÑEDOS--------------------------------*/
+/*-----------------------VIÑEDOS BAKATA---------------------*/
+.vinedo__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1700px;
+  margin: auto;
+  p {
+    margin-top: 1em;
+    text-align: left;
+  }
+}
+  .vinedo__img {
     background-image: url("../img/8.vinedo.jpg");
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: 40%;
-}
-}
+    width: 100%;
+  }
 
 /*-----------------------CARDS PRODUCTOS---------------------*/
-.card__container {
+  .card__container {
     max-width: 1700px;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 1.5em;
-    h3 {
-        text-align: center;
-        margin: 1rem 0;
-        font-size: 1.6999rem;
-    }
-    p {
-        font-family: "Raleway", sans-serif;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 1.1667rem;
-        margin: 1rem 0;
-      }
-    button {
-        border: none;
-        padding: 12px;
-        width: 100%;
-        text-align: center;
-        cursor: pointer;
-        margin-top: 1rem;
-        border-radius: 10px;
-    }
-.card {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: left;
-    font-family: "Raleway", sans-serif;
-    max-width: 300px;
-    padding: 1rem 1rem 2rem 1rem;
-    position: relative;
-    border-radius: 10px;
-    }
-.card__oferta{
-        background-color: rgb(240, 233, 140);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        font-family: "Raleway", sans-serif;
-        font-weight: bolder;
-        font-size: 1,10rem;
-        position: absolute;
-        top: -4px;
-        right: -100px;
-        height: 26px;
-      }
+  }
+  .card__h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3em;
+      margin-bottom: 1em;
+  }
 }
- /*--------------------PAGINA_CATALOGO--------------------------*/     
-/*-----------------------HERO---------------------*/
